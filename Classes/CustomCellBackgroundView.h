@@ -1,25 +1,24 @@
 //
 //  CustomCellBackgroundView.h
-//  TableTest
 //
-//  Created by Stephan on 22.02.09.
-//  Copyright 2009 Coriolis Technologies. All rights reserved.
+//  Created by Mike Akers on 11/21/08.
+//  Copyright 2008 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-
 typedef enum  {
-	CustomCellBackgroundViewPositionTop, 
-	CustomCellBackgroundViewPositionMiddle, 
-	CustomCellBackgroundViewPositionBottom,
-	CustomCellBackgroundViewPositionSingle
+    CustomCellBackgroundViewPositionTop, 
+    CustomCellBackgroundViewPositionMiddle, 
+    CustomCellBackgroundViewPositionBottom,
+    CustomCellBackgroundViewPositionSingle,
+    CustomCellBackgroundViewPositionPlain
 } CustomCellBackgroundViewPosition;
 
 @interface CustomCellBackgroundView : UIView {
-	UIColor *borderColor;
-	UIColor *fillColor;
-	CustomCellBackgroundViewPosition position;
+    UIColor *borderColor;
+    UIColor *fillColor;
+    CustomCellBackgroundViewPosition position;
 }
 
 @property(nonatomic, retain) UIColor *borderColor, *fillColor;

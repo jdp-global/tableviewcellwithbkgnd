@@ -18,6 +18,7 @@
 		D4A70D450F51E837002EDFB5 /* CustomCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A70D440F51E837002EDFB5 /* CustomCellBackgroundView.m */; };
 		D4A70D860F51EBAA002EDFB5 /* CustomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A70D850F51EBAA002EDFB5 /* CustomCellView.m */; };
 		D4A70D880F51EBC2002EDFB5 /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A70D870F51EBC2002EDFB5 /* CustomCellView.xib */; };
+		E81B054D14AB0C1A00D65756 /* CSCustomCellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E81B054C14AB0C1A00D65756 /* CSCustomCellBackgroundView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		D4A70D840F51EBAA002EDFB5 /* CustomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellView.h; sourceTree = "<group>"; };
 		D4A70D850F51EBAA002EDFB5 /* CustomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellView.m; sourceTree = "<group>"; };
 		D4A70D870F51EBC2002EDFB5 /* CustomCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
+		E81B054B14AB0C1A00D65756 /* CSCustomCellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSCustomCellBackgroundView.h; sourceTree = "<group>"; };
+		E81B054C14AB0C1A00D65756 /* CSCustomCellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCustomCellBackgroundView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				D4A70D440F51E837002EDFB5 /* CustomCellBackgroundView.m */,
 				D4A70D840F51EBAA002EDFB5 /* CustomCellView.h */,
 				D4A70D850F51EBAA002EDFB5 /* CustomCellView.m */,
+				E81B054B14AB0C1A00D65756 /* CSCustomCellBackgroundView.h */,
+				E81B054C14AB0C1A00D65756 /* CSCustomCellBackgroundView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -147,7 +152,11 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TableTest" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -180,6 +189,7 @@
 				28D7ACF80DDB3853001CB0EB /* TableTestViewController.m in Sources */,
 				D4A70D450F51E837002EDFB5 /* CustomCellBackgroundView.m in Sources */,
 				D4A70D860F51EBAA002EDFB5 /* CustomCellView.m in Sources */,
+				E81B054D14AB0C1A00D65756 /* CSCustomCellBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +206,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TableTest_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = TableTest;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -208,7 +220,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TableTest_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = TableTest;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

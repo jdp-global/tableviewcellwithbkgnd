@@ -9,6 +9,7 @@
 #import "TableTestViewController.h"
 #import "CustomCellBackgroundView.h"
 #import "CustomCellView.h"
+#import "CSCustomCellBackgroundView.h"
 
 @implementation TableTestViewController
 
@@ -104,16 +105,19 @@
 	if ([cellListForSection count] == 1) {
 		pos = CustomCellBackgroundViewPositionSingle;
 	}
-	
+	[_tableView setSeparatorColor:[UIColor whiteColor]];
 	CustomCellBackgroundView *bkgView = [[CustomCellBackgroundView alloc] initWithFrame:cell.frame];
-	bkgView.fillColor = [[cellListForSection objectAtIndex:indexPath.row] objectForKey:@"color"];
-	bkgView.borderColor = [UIColor blackColor];
+	bkgView.fillColor = [UIColor blackColor];//[[cellListForSection objectAtIndex:indexPath.row] objectForKey:@"color"];
+	bkgView.borderColor = [UIColor whiteColor];
+    //CSCustomCellBackgroundView *bkgView = [[CSCustomCellBackgroundView alloc] initWithFrame:cell.frame];
+	
+    
 	bkgView.position = pos;
 	cell.backgroundView = bkgView;
-	cell.backgroundColor = [UIColor redColor];
-	cell.textColor = [UIColor redColor];
+	//cell.backgroundColor = [UIColor redColor];
 	cell.textLabel.text = [[cellListForSection objectAtIndex:indexPath.row] objectForKey:@"text"];
-	return cell;		
+	cell.textLabel.textColor = [UIColor whiteColor];
+    return cell;		
 }
 
 //==========================================================================================
